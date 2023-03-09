@@ -1,5 +1,5 @@
 fun main() {
-var title= names("drivers","Drinks")
+var title= names("driver","Drinks")
  var numbers = digits(arrayOf(12,45,36,78,13,1))
 
     var separate= sentence("Maiden")
@@ -19,15 +19,15 @@ calculations.addition()
 //1. Write and invoke a function that takes in any 2 strings and returns the first
 //character of the longer string or the first character of the first string if they are
 //equal in length.
-fun names(name1:String,name2:String):Unit {
+fun names(name1:String,name2:String):Char {
     var length1 = name1.length
     var length2 = name2.length
     println(length1)
     println(length2)
-    var longer = if (length1 == length2)
-        println(name1[0])
+    var longer = if (length1 == length2){
+        (name1[0])}
     else
-        println(name1[0])
+    {(name2[0])}
 return longer
 
 
